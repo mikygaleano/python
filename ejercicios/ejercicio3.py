@@ -1,3 +1,5 @@
+# indice de masa corporal
+
 peso = int(input('Ingrese su peso, por favor: '))
 talla = float(input('Ingrese su altura en metros, por favor: '))
 
