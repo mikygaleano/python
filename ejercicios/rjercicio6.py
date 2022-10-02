@@ -16,5 +16,3 @@ c = coche()
 c.color = 'naranja'
 
 print(c.color)
-
-
