@@ -16,6 +16,7 @@ def calculadora():
     while True:
         print('******** Bienvenido a su calculadora *********')
         elegir = input('pulse "espacio" para apagar o "a" para seguir: ')
+        
         if elegir == ' ':
             print('Chau!!')
             break
@@ -45,7 +46,8 @@ def calculadora():
                 print(divicion(num1, num2))
             else:
                 print('Opción invalida')
-    
+        else:
+            print('Opción invalida')
         
         
 
