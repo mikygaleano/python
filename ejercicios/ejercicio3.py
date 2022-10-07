@@ -1,5 +1,5 @@
 # indice de masa corporal
-
+import time
 peso = int(input('Ingrese su peso, por favor: '))
 talla = float(input('Ingrese su altura en metros, por favor: '))
 
@@ -8,3 +8,4 @@ def imc ():
     print(f'Su indice de masa corporal es: {str(calculo)}')
 
 imc()
+time.sleep(10)

@@ -1,5 +1,5 @@
 # modulo calculadora
-
+import time
 def suma (a, b):
     print(a + b)
 
@@ -49,6 +49,6 @@ def calculadora():
         else:
             print('Opción invalida')
         
-        
+        time.sleep(2)    
 
     

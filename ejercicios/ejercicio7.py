@@ -1,4 +1,4 @@
-
+import time
 class alumno:
     nombre : None
     nota : None
@@ -15,3 +15,5 @@ a.nombre = 'Michael'
 a.nota = 8
 
 print(f'El alumno {a.nombre} con nota de {a.nota} esta {a.cuatrimestre()}')
+
+time.sleep(5)
