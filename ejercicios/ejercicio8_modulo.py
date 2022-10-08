@@ -1,18 +1,19 @@
 # modulo calculadora
 import time
+
 def suma (a, b):
-    print(a + b)
+    print(f'Resultado: {a + b}')
 
 def resta (a, b):
-    print(a - b)
+    print(f'Resultado: {a - b}')
 
 def multiplicar (a, b):
-    print(a * b)
+    print(f'Resultado: {a * b}')
 
 def divicion (a, b):
-    print(a / b)
+    print(f'Resultado: {a / b}')
 
-def calculadora():
+def calculadora(num1 = 0, num2 = 0):
     while True:
         print('******** Bienvenido a su calculadora *********')
         elegir = input('pulse "espacio" para apagar o "a" para seguir: ')
@@ -31,23 +32,29 @@ def calculadora():
             print('opcion "3" multiplicar')
             print('opcion "4" dividir')
             print('opcion "5" finalizar calculadora')
-            opcion = int(input('ingrese su opcion a continuación: '))
+            opcion = input('ingrese su opcion a continuación: ')
 
-            if opcion == 5:
+            if opcion == '5':
+                
                 print('Adios!!')
                 break
-            elif opcion == 1:
+            elif opcion == '1':
+                
                 print(suma(num1, num2))
-            elif opcion == 2:
+            elif opcion == '2':
+                
                 print(resta(num1, num2))
-            elif opcion == 3:
+            elif opcion == '3':
+                
                 print(multiplicar(num1, num2))
-            elif opcion == 4:
+            elif opcion == '4':
+            
                 print(divicion(num1, num2))
             else:
-                print('Opción invalida')
+                print('Opcion invalida')
         else:
             print('Opción invalida')
+            time.sleep(2)
         
         time.sleep(2)    
 
