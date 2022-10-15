@@ -1,7 +1,19 @@
 
-f = open('archivo1.txt', 'a')
+def escribirFichero (archivo, datos):
+    f = open(archivo, 'w')
 
-f.write('Hola mundo!!\n')
-f.write('Mi nombre es Miky\n')
+    for linea in datos:
+        if not linea.endswith('\n'):
+            linea = linea + '\n'
+            f.write(linea)
 
-f.close()
+    f.close()
+
+caracteres = [
+    'Hola mundo!!',
+    'Mi nombres Michael',
+    'Alias Maikii'
+]
+
+escribirFichero('archivo.txt', caracteres)
+
