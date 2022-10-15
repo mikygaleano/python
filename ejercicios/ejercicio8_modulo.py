@@ -33,28 +33,26 @@ def calculadora(num1 = 0, num2 = 0):
             print('opcion "4" dividir')
             print('opcion "5" finalizar calculadora')
             opcion = input('ingrese su opcion a continuación: ')
-
-            if opcion == '5':
-                
+            if opcion == '5':               
                 print('Adios!!')
                 break
-            elif opcion == '1':
-                
+            elif num1 == str() or num2 == str():
+                print('Los datos ingresados deben ser solo numeros')
+                continue
+            elif opcion == '1':    
                 print(suma(num1, num2))
-            elif opcion == '2':
-                
+            elif opcion == '2': 
                 print(resta(num1, num2))
             elif opcion == '3':
-                
                 print(multiplicar(num1, num2))
             elif opcion == '4':
-            
                 print(divicion(num1, num2))
             else:
                 print('Opcion invalida')
+                continue
         else:
             print('Opción invalida')
-            time.sleep(2)
+            continue
         
         time.sleep(2)    
 

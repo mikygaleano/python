@@ -5,6 +5,7 @@ hora = time.strftime('%H:%M:%S')
 horaIngreso = time.strftime('08:00:00')
 horaSalida = time.strftime('19:00:00')
 
+
 def irte ():
     print(horaIngreso - hora)
 
