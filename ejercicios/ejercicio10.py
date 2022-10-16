@@ -1,9 +1,10 @@
+# funcion para cargar datos a un archivo txt, desde una lista/array #
 
 def escribirFichero (archivo, datos):
     f = open(archivo, 'w')
 
     for linea in datos:
-        if not linea.endswith('\n'):
+        if not linea.endswith('\n'): 
             linea = linea + '\n'
             f.write(linea)
 
