@@ -1,3 +1,15 @@
+## cargando datos de un objeto a un archivo bin ##
+
+# r: lectura
+# a: append/adjuntar
+# w: escritura
+# x: create
+
+# t: texto
+# b: binary
+
+# +
+
 import pickle
 
 
