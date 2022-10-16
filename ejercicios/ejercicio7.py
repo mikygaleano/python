@@ -1,7 +1,7 @@
 import time
 class alumno:
-    nombre : None
-    nota : None
+    nombre = None
+    nota = None
 
     def cuatrimestre (self):
         if self.nota >= 7 :
